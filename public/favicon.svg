@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
+  <defs>
+    <radialGradient id="favBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#070b14" />
+    </radialGradient>
+    <linearGradient id="favShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#082f49" />
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#favBg)" />
+  <!-- Shield Rim -->
+  <path d="M 256 64 C 360 64 424 96 424 192 C 424 330 330 420 256 468 C 182 420 88 330 88 192 C 88 96 152 64 256 64 Z" fill="url(#favGold)" />
+  <path d="M 256 88 C 342 88 396 114 396 196 C 396 312 318 394 256 438 C 194 394 116 312 116 196 C 116 114 170 88 256 88 Z" fill="url(#favShield)" />
+  <!-- 7-pointed star -->
+  <polygon points="256,150 274,218 344,236 274,254 256,322 238,254 168,236 238,218" fill="url(#favGold)" stroke="#ffffff" stroke-width="6" />
+  <circle cx="256" cy="236" r="16" fill="#10b981" />
+</svg>

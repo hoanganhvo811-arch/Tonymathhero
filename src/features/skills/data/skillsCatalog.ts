@@ -1,0 +1,76 @@
+import type { HeroSkill } from '@/types/skill';
+
+export const HERO_SKILLS_CATALOG: HeroSkill[] = [
+  {
+    id: 'skill-sword-strike',
+    name: 'Kiếm Quang Cơ Bản',
+    nameEn: 'Sword Strike',
+    description: 'Đòn chém dũng cảm cơ bản của Hiệp Sĩ Tony. Gây 100% sát thương chuẩn, không tiêu tốn năng lượng.',
+    iconName: 'Sword',
+    levelRequirement: 1,
+    mpCost: 0,
+    cooldownTurns: 0,
+    damageMultiplier: 1.0,
+    unlockCondition: 'Có sẵn khi bắt đầu hành trình (Cấp 1)',
+    skillType: 'attack',
+  },
+  {
+    id: 'skill-power-slash',
+    name: 'Trảm Kích Cuồng Nộ',
+    nameEn: 'Power Slash',
+    description: 'Vung gươm dồn toàn lực tạo luồng kiếm khí xé gió. Gây 160% sát thương lên quái vật.',
+    iconName: 'Swords',
+    levelRequirement: 2,
+    mpCost: 15,
+    cooldownTurns: 1,
+    damageMultiplier: 1.6,
+    unlockCondition: 'Mở khóa khi Hiệp Sĩ đạt Cấp độ 2',
+    skillType: 'attack',
+  },
+  {
+    id: 'skill-magic-blast',
+    name: 'Phép Thuật Tri Thức Tinh Tú',
+    nameEn: 'Magic Blast',
+    description: 'Khai mở tinh hoa toán học, triệu hồi quả cầu năng lượng tinh tú gây 220% sát thương bạo kích và khai thác điểm yếu quái vật.',
+    iconName: 'Sparkles',
+    levelRequirement: 3,
+    mpCost: 25,
+    cooldownTurns: 2,
+    damageMultiplier: 2.2,
+    unlockCondition: 'Mở khóa khi Hiệp Sĩ đạt Cấp độ 3',
+    skillType: 'magic',
+  },
+  {
+    id: 'skill-shield-guard',
+    name: 'Kiên Thuẫn Hộ Vệ',
+    nameEn: 'Shield Guard',
+    description: 'Giương cao khiên phép tạo màng chắn quang năng, giảm 50% sát thương nhận vào trong lượt tiếp theo.',
+    iconName: 'Shield',
+    levelRequirement: 4,
+    mpCost: 15,
+    cooldownTurns: 2,
+    damageMultiplier: 0,
+    defenseBuffPercent: 50,
+    unlockCondition: 'Mở khóa khi Hiệp Sĩ đạt Cấp độ 4',
+    skillType: 'defense',
+  },
+  {
+    id: 'skill-healing-light',
+    name: 'Quang Huy Phục Hồi',
+    nameEn: 'Healing Light',
+    description: 'Cầu nguyện năng lượng đất mẹ Arithmia, lập tức hồi phục 75 điểm Sinh Lực (HP) cho Tony.',
+    iconName: 'Heart',
+    levelRequirement: 5,
+    mpCost: 30,
+    cooldownTurns: 3,
+    damageMultiplier: 0,
+    healingAmount: 75,
+    unlockCondition: 'Mở khóa khi Hiệp Sĩ đạt Cấp độ 5',
+    skillType: 'heal',
+  },
+];
+
+export function getSkillDef(id: string): HeroSkill | undefined {
+  const skill = HERO_SKILLS_CATALOG.find((s) => s.id === id);
+  return skill ? { ...skill } : undefined;
+}

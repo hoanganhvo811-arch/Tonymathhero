@@ -1,0 +1,11 @@
+/* Grade 2: The Little Hero (Emerald & Silver Explorer Theme) */
+.theme-grade-2 {
+  --primary: #10b981;
+  --primary-glow: rgba(16, 185, 129, 0.5);
+  --secondary: #059669;
+  --accent: #34d399;
+  --silver: #e2e8f0;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #0c3d2e 0%, #06281e 60%, #02120d 100%);
+  --hero-glow: #10b981;
+  --panel-border: rgba(16, 185, 129, 0.4);
+}

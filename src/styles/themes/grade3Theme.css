@@ -1,0 +1,11 @@
+/* Grade 3: The Legendary Hero (Royal Blue & Radiant Gold Theme) */
+.theme-grade-3 {
+  --primary: #0284c7;
+  --primary-glow: rgba(56, 189, 248, 0.55);
+  --secondary: #1e40af;
+  --accent: #facc15;
+  --gold: #fef08a;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #0d2f5a 0%, #071c38 60%, #030d1c 100%);
+  --hero-glow: #38bdf8;
+  --panel-border: rgba(250, 204, 21, 0.45);
+}

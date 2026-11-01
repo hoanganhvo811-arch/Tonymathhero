@@ -1,0 +1,58 @@
+import type { FractionAchievement } from '@/types/fractions';
+
+export const FRACTION_ACHIEVEMENTS: FractionAchievement[] = [
+  {
+    id: 'frac_equal_splitter',
+    nameVi: 'Bậc Thầy Chia Đều',
+    descVi: 'Phân biệt chính xác giữa chia đều và chia không đều trong các bài thử thách.',
+    icon: '⚖️',
+    xpReward: 100,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'frac_pizza_master',
+    nameVi: 'Kiến Trúc Sư Phân Số',
+    descVi: 'Tự tay chia và tô màu thành công các mô hình trong Fraction Builder.',
+    icon: '🍕',
+    xpReward: 120,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'frac_comparator',
+    nameVi: 'Mắt Thần So Sánh',
+    descVi: 'Vượt qua các câu hỏi so sánh phân số trực quan mà không bị nhầm lẫn.',
+    icon: '👁️',
+    xpReward: 130,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'frac_fair_sharer',
+    nameVi: 'Hiệp Sĩ Công Bằng',
+    descVi: 'Hoàn thành các nhiệm vụ chia đều quà tặng và vật phẩm cho dân làng.',
+    icon: '🎁',
+    xpReward: 140,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'frac_boss_slayer',
+    nameVi: 'Khắc Tinh Ma Vương Phân Thân',
+    descVi: 'Đánh bại Lord Chaos Partition qua cả 3 giai đoạn phong ấn.',
+    icon: '⚔️',
+    xpReward: 250,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'frac_crystal_guardian',
+    nameVi: 'Người Giữ Tinh Thể Phân Số',
+    descVi: 'Khôi phục hoàn toàn Knowledge Crystal của Vương Quốc Phân Số.',
+    icon: '🔮',
+    xpReward: 300,
+    unlocked: false,
+    progress: 0,
+  },
+];

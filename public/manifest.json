@@ -1,0 +1,71 @@
+{
+  "name": "TONY MATH HERO – The Legend of Seven Kingdoms",
+  "short_name": "TONY MATH HERO",
+  "description": "Game nhập vai phiêu lưu 3D giáo dục Toán học Lớp 2 và Lớp 3 – Tony Math Hero",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#0f172a",
+  "background_color": "#070b14",
+  "lang": "vi",
+  "categories": ["education", "games", "kids"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chiến Dịch Lớp 2 (Grade 2)",
+      "short_name": "Lớp 2",
+      "description": "Vào ngay chiến dịch Hiệp Sĩ Khởi Nguyên Lớp 2",
+      "url": "./#/campaigns",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Chiến Dịch Lớp 3 (Grade 3)",
+      "short_name": "Lớp 3",
+      "description": "Vào ngay chiến dịch Hiệp Sĩ Huyền Thoại Lớp 3",
+      "url": "./#/campaigns",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Báo Cáo Học Tập Toán",
+      "short_name": "Báo Cáo",
+      "description": "Xem thống kê độ thông thạo 7 vương quốc của Tony",
+      "url": "./#/dashboard",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

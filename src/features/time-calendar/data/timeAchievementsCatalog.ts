@@ -1,0 +1,58 @@
+import type { TimeAchievement } from '@/types/timeCalendar';
+
+export const TIME_ACHIEVEMENTS: TimeAchievement[] = [
+  {
+    id: 'time_clock_reader',
+    nameVi: 'Bậc Thầy Xem Giờ',
+    descVi: 'Đọc chính xác giờ đúng, giờ rưỡi và giờ 15 phút trên mặt đồng hồ kim.',
+    icon: '⏰',
+    xpReward: 100,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'time_calendar_master',
+    nameVi: 'Nhà Thám Hiểm Lịch',
+    descVi: 'Xác định chuẩn xác ngày, thứ trong tuần và số ngày trong từng tháng.',
+    icon: '📅',
+    xpReward: 120,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'time_duration_expert',
+    nameVi: 'Chuyên Gia Khoảng Thời Gian',
+    descVi: 'Tính toán chính xác thời lượng hành trình và thời điểm đến nơi.',
+    icon: '⏳',
+    xpReward: 130,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'time_routine_architect',
+    nameVi: 'Chiến Binh Kỷ Luật',
+    descVi: 'Sắp xếp thời gian biểu sinh hoạt hằng ngày khoa học và đúng thứ tự.',
+    icon: '📋',
+    xpReward: 140,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'time_boss_slayer',
+    nameVi: 'Khắc Tinh Vệ Binh Thời Không',
+    descVi: 'Đánh bại Chronos Watcher qua cả 3 giai đoạn phong ấn bánh răng thời gian.',
+    icon: '⚔️',
+    xpReward: 250,
+    unlocked: false,
+    progress: 0,
+  },
+  {
+    id: 'time_crystal_guardian',
+    nameVi: 'Người Giữ Tinh Thể Thời Gian',
+    descVi: 'Khôi phục hoàn toàn Chrono Knowledge Crystal cho Vương quốc.',
+    icon: '🔮',
+    xpReward: 300,
+    unlocked: false,
+    progress: 0,
+  },
+];

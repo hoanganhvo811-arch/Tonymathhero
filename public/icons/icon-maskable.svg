@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient filling entire 512x512 without rounded corners for maskable icon -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070b14" />
+    </radialGradient>
+
+    <!-- Shield Face Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="40%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#072744" />
+    </linearGradient>
+
+    <!-- Royal Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#facc15" />
+      <stop offset="70%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="starGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Solid full-bleed canvas for Android maskable background -->
+  <rect width="512" height="512" fill="url(#bgGrad)" />
+
+  <!-- Inner Content scaled by 80% to fit within maskable safe area zone (circle radius 205) -->
+  <g transform="translate(51.2, 51.2) scale(0.8)">
+    <!-- Outer Ambient Glow Ring -->
+    <circle cx="256" cy="256" r="215" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.4" />
+
+    <!-- Seven Kingdoms Stars Orbiting -->
+    <circle cx="256" cy="58" r="8" fill="#facc15" filter="url(#goldGlow)" />
+    <circle cx="430" cy="142" r="8" fill="#38bdf8" filter="url(#goldGlow)" />
+    <circle cx="454" cy="330" r="8" fill="#10b981" filter="url(#goldGlow)" />
+    <circle cx="316" cy="460" r="8" fill="#a855f7" filter="url(#goldGlow)" />
+    <circle cx="196" cy="460" r="8" fill="#f43f5e" filter="url(#goldGlow)" />
+    <circle cx="58" cy="330" r="8" fill="#fb923c" filter="url(#goldGlow)" />
+    <circle cx="82" cy="142" r="8" fill="#e2e8f0" filter="url(#goldGlow)" />
+
+    <!-- Crossed Hero Swords in the Background -->
+    <g opacity="0.85">
+      <path d="M 120 120 L 392 392 M 106 134 L 134 106 M 140 140 L 168 112 M 112 168 L 140 140" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" />
+      <path d="M 392 120 L 120 392 M 378 106 L 406 134 M 344 140 L 372 112 M 372 168 L 400 140" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" />
+    </g>
+
+    <!-- Hero Shield Body -->
+    <g filter="url(#goldGlow)">
+      <path d="M 256 82 C 345 82 405 106 405 190 C 405 310 325 390 256 442 C 187 390 107 310 107 190 C 107 106 167 82 256 82 Z" fill="url(#goldGrad)" />
+      <path d="M 256 98 C 333 98 387 118 387 192 C 387 298 317 372 256 420 C 195 372 125 298 125 192 C 125 118 179 98 256 98 Z" fill="#0b1728" />
+      <path d="M 256 108 C 325 108 373 126 373 194 C 373 290 310 358 256 404 C 202 358 139 290 139 194 C 139 126 187 108 256 108 Z" fill="url(#shieldGrad)" />
+    </g>
+
+    <path d="M 256 114 C 295 114 360 128 360 190 C 360 230 330 260 256 260 Z" fill="#ffffff" opacity="0.12" />
+
+    <!-- Crown -->
+    <path d="M 196 172 L 216 132 L 256 156 L 296 132 L 316 172 Z" fill="url(#goldGrad)" stroke="#78350f" stroke-width="3" />
+    <circle cx="216" cy="132" r="5" fill="#f43f5e" />
+    <circle cx="256" cy="156" r="6" fill="#38bdf8" />
+    <circle cx="296" cy="132" r="5" fill="#10b981" />
+
+    <!-- Center Math Hero Star Crest -->
+    <g filter="url(#starGlow)">
+      <polygon points="256,182 268,230 316,242 268,254 256,302 244,254 196,242 244,230" fill="url(#goldGrad)" />
+      <polygon points="256,196 264,234 302,242 264,250 256,288 248,250 210,242 248,234" fill="#ffffff" />
+      <circle cx="256" cy="242" r="12" fill="url(#emeraldGrad)" />
+    </g>
+
+    <!-- Math Symbols -->
+    <g fill="#facc15" font-family="'Montserrat', sans-serif" font-weight="900" font-size="28" text-anchor="middle" opacity="0.95">
+      <text x="180" y="205">+</text>
+      <text x="332" y="205">−</text>
+      <text x="175" y="300">×</text>
+      <text x="337" y="300">÷</text>
+      <text x="256" y="348">=</text>
+    </g>
+
+    <!-- Banner Ribbon -->
+    <g filter="url(#goldGlow)">
+      <path d="M 104 380 L 140 364 L 372 364 L 408 380 L 392 414 L 360 404 L 152 404 L 120 414 Z" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round" />
+      <text x="256" y="394" fill="url(#goldGrad)" font-family="'Be Vietnam Pro', 'Montserrat', sans-serif" font-weight="900" font-size="22" letter-spacing="3" text-anchor="middle">
+        TONY MATH HERO
+      </text>
+    </g>
+  </g>
+</svg>
